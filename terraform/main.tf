@@ -1,13 +1,13 @@
 terraform {
   backend "azurerm" {
-    resource_group_name   = "terraform"
-    storage_account_name  = "terraform007"
-    container_name        = "tfstate"
+    resource_group_name   = "TerraformDemo"
+    storage_account_name  = "terraformcodeops"
+    container_name        = "tfstatefile"
     key                   = "dev.terraform.tfstate"
   }
 }
-module "AppRegistration" {
-  source    = "./modules/AppRegistration" #A
-  appname = var.appname #B
+module "RG" {
+  source    = "./modules/RG" #A
+  rgname = var.rgname #B
   
 }

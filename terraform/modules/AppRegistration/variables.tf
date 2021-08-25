@@ -1,3 +1,0 @@
-variable "appname" {
-  type = string
-}

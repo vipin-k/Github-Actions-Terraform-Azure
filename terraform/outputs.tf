@@ -1,6 +1,6 @@
-output "app_name" {
+output "rg_name" {
   value = {
-    appname = module.AppRegistration.app_name.application_name
+    appname = module.rg.resourcegroup_name.rg_name
     }
 }
 

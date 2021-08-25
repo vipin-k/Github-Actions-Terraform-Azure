@@ -1,3 +1,3 @@
 namespace = "Dev"
-location    = "East US"
-appname = "webdemo"
+location  = "East US"
+rgname = "github-action"
