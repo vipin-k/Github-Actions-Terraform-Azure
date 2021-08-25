@@ -1,0 +1,3 @@
+variable "appname" {
+  type = string
+}
