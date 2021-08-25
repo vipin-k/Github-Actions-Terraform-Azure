@@ -9,5 +9,4 @@ terraform {
 module "RG" {
   source    = "./modules/RG" #A
   rgname = var.rgname #B
-  
 }
