@@ -1,2 +1,1 @@
-location = "East US"
-rgname   = "github-action"
+rgname = "github-action"
