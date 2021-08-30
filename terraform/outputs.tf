@@ -5,7 +5,7 @@ output "rg_name" {
 }
 output "Storage_Account_name" {
   value = {
-    appname = module.StorageAccount.storageaccount_name.sta_name
+    storageaccount = module.StorageAccount.storageaccount_name.sta_name
   }
 }
 
