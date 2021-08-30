@@ -8,3 +8,7 @@ variable "location" {
   default     = "East US"
   type        = string
 }
+variable "sname" {
+  description = "Azure Storage Account"
+  type        = string
+}
