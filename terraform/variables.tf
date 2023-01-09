@@ -4,7 +4,7 @@ variable "rgname" {
   type        = string
 }
 variable "location" {
-  description = "Azure location"
+  description = "Variable Azure location"
   default     = "West US 2"
   type        = string
 }
