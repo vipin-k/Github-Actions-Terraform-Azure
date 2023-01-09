@@ -1,11 +1,11 @@
 variable "rgname" {
   description = "Resource Group Name"
-  default     = "github-action1"
+  default     = "github-actionmm1"
   type        = string
 }
 variable "location" {
   description = "Azure location"
-  default     = "East US"
+  default     = "West US 2"
   type        = string
 }
 variable "sname" {
