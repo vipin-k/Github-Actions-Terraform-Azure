@@ -9,5 +9,3 @@ resource "azurerm_storage_account" "STA" {
     environment = "dev"
   }
 }
- 
- 
