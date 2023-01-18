@@ -18,18 +18,11 @@ module "SA" {
   location = var.location
 }
 
-
-resource "azurerm_mssql_server" "mtc-sqlserver" {
+module "sql" {
   source   = "./modules/sql"
-  name                         = "mssqlserver01122023"
-  resource_group_name          = var.rgname
-  location                     = var.location
-  version                      = "12.0"
-  administrator_login          = "adminadmin"
-  administrator_login_password = "Password123456"
-
-  tags = {
-    environment = "dev"
-  }
+ 
+  rgname   = var.rgname
+  location = var.location
 }
+ 
  
