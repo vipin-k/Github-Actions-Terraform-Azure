@@ -20,6 +20,7 @@ module "SA" {
 
 
 resource "azurerm_mssql_server" "mtc-sqlserver" {
+  source   = "./modules/sql"
   name                         = "mssqlserver01122023"
   resource_group_name          = var.rgname
   location                     = var.location
