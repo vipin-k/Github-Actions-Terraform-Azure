@@ -9,6 +9,6 @@ variable "location" {
   type        = string
 }
 variable "sname" {
-  description = "Azure Storage Accounts"
+  description = "Azure Storage Account"
   type        = string
 }
