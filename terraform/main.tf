@@ -18,11 +18,4 @@ module "SA" {
   location = var.location
 }
 
-module "sql" {
-  source   = "./modules/sql"
- 
-  rgname   = var.rgname
-  location = var.location
-}
- 
  
