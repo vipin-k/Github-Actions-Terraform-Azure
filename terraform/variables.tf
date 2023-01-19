@@ -14,5 +14,6 @@ variable "sname" {
 }
 
 variable "password" {
+  description = "Azure Database Password"
   type = string
 }
