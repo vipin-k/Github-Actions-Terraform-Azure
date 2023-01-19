@@ -10,7 +10,6 @@ resource "azurerm_storage_account" "STA" {
   }
 }
 
-
 resource "azurerm_mssql_server" "mtc-sqlserver" {
   name                         = "mssqlserver01122023"
   resource_group_name          = var.rgname
@@ -18,9 +17,7 @@ resource "azurerm_mssql_server" "mtc-sqlserver" {
   version                      = "12.0"
   administrator_login          = "adminadmin"
   administrator_login_password = "Password123456"
-
   tags = {
     environment = "dev"
   }
 }
- 
