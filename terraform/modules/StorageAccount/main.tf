@@ -36,14 +36,3 @@ resource "azurerm_mssql_database" "RAEdb" {
   license_type   = "LicenseIncluded"
   
 }
-
-# resource "azurerm_mssql_database" "ETRAEdb" {
-#   name           = "ETRAEdb"
-#   server_id      = azurerm_mssql_server.mtc-sqlserver.id
-#   collation      = "SQL_Latin1_General_CP1_CI_AS"
-#   license_type   = "LicenseIncluded"
-
-  
-#   ledger_enabled = true
-  
-# }
