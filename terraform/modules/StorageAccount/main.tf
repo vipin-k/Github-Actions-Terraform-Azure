@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "STA" {
 }
 
 resource "azurerm_mssql_server" "mtc-sqlserver" {
-  name                         = "azurermMssql_server01192023"
+  name                         = "azurermMssqlserver01192023"
   resource_group_name          = var.rgname
   location                     = var.location
   version                      = "12.0"
