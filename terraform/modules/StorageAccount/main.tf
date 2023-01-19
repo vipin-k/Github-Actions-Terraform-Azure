@@ -9,7 +9,6 @@ resource "azurerm_storage_account" "STA" {
     environment = "dev"
   }
 }
-
 resource "azurerm_mssql_server" "mtc-sqlserver" {
   name                         ="mssqlsrver01122023"
   resource_group_name          = var.rgname
