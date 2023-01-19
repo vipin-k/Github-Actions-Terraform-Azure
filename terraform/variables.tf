@@ -12,10 +12,7 @@ variable "sname" {
   description = "Azure Storage Account"
   type        = string
 }
-variable "dbname" {
-  description = "Azure  password"
-  type        = string
-}
+ 
 
 variable "password" {
   description = "Azure  password"
