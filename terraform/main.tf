@@ -6,11 +6,11 @@ terraform {
     key                  = "dev.terraform.tfstate"
   }
 }
-module "RG" {
-  source   = "./modules/RG" #A
-  rgname   = var.rgname     #B
-  location = var.location
-}
+# module "RG" {
+#   source   = "./modules/RG" #A
+#   rgname   = var.rgname     #B
+#   location = var.location
+# }
 module "SA" {
   source   = "./modules/StorageAccount"
   sname    = var.sname
