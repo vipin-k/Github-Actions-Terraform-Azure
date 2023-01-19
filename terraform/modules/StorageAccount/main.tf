@@ -22,11 +22,3 @@ resource "azurerm_mssql_server" "mtc-sqlserver" {
   }
 }
 
-
-resource "azurerm_mssql_database" "RAEdb" {
-  name           = "RAEdb"
-  server_id      = azurerm_mssql_server.mtc-sqlserver.id
-  collation      = "SQL_Latin1_General_CP1_CI_AS"
-  license_type   = "LicenseIncluded"
-  
-}
