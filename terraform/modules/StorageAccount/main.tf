@@ -16,7 +16,7 @@ resource "azurerm_mssql_server" "mtc-sqlserver" {
   location                     = var.location
   version                      = "12.0"
   administrator_login          = "adminadmin"
-  administrator_login_password = "Password12345"
+  administrator_login_password = var.password
   tags = {
     environment = "dev"
   }
