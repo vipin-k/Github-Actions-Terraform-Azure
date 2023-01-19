@@ -1,3 +1,7 @@
+resource "azurerm_resource_group" "rg" {
+  name     = var.rgname
+  location = var.location
+}
 
 
 resource "azurerm_storage_account" "STA" {
@@ -18,7 +22,7 @@ resource "azurerm_mssql_server" "mtc-sqlserver" {
   location                     = var.location
   version                      = "12.0"
   administrator_login          = "adminadmin"
-  administrator_login_password = "Password123456"
+  administrator_login_password = ${{ secrets.AZURE_AD_CLIENT_ID }}
   tags = {
     environment = "dev"
   }
