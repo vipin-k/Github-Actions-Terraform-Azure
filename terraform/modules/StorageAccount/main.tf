@@ -1,3 +1,5 @@
+
+
 resource "azurerm_storage_account" "STA" {
   name                     = var.sname
   resource_group_name      = var.rgname
