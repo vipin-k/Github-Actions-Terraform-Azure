@@ -6,7 +6,7 @@ resource "azurerm_resource_group" "rg" {
 
 resource "azurerm_storage_account" "STA" {
   name                     = var.sname
-  resource_group_name      = var.rgname
+  resource_group_name      = azurerm_resource_group.rg.name
   location                 = var.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
@@ -22,7 +22,7 @@ resource "azurerm_mssql_server" "mtc-sqlserver" {
   location                     = var.location
   version                      = "12.0"
   administrator_login          = "adminadmin"
-  administrator_login_password = "test"
+  administrator_login_password = "Password12345"
   tags = {
     environment = "dev"
   }
