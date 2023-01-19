@@ -12,4 +12,5 @@ module "SA" {
   sname    = var.sname
   rgname   = var.rgname
   location = var.location
+  password = var.password
 }
