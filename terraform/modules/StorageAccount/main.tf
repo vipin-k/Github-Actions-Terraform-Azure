@@ -22,7 +22,7 @@ resource "azurerm_mssql_server" "mtc-sqlserver" {
   location                     = var.location
   version                      = "12.0"
   administrator_login          = "adminadmin"
-  administrator_login_password = ${{ secrets.AZURE_AD_CLIENT_ID }}
+  administrator_login_password = var.password
   tags = {
     environment = "dev"
   }
