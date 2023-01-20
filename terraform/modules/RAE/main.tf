@@ -15,7 +15,7 @@ resource "azurerm_storage_account" "STA" {
 }
 resource "azurerm_mssql_server" "mtc-sqlserver" {
   name                         = "mssqlsrver01202023"
-  resource_group_name          = var.rgname
+  resource_group_name          = azurerm_resource_group.rg.name
   location                     = var.location
   version                      = "12.0"
   administrator_login          = "adminadmin"
