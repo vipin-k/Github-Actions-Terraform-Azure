@@ -1,3 +1,3 @@
 rgname   = "github-action"
 location = "East US"
-sname    = "raeledgerstorage"
+sname    = "raeledgerstorage012023"
