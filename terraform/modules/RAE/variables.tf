@@ -7,3 +7,7 @@ variable "location" {
 variable "rgname" {
   type = string
 }
+variable "password" {
+  description = "Azure  password"
+  type        = string
+}
